@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.content {
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+}
+
+.footer,
+.left-column,
+.center-column,
+.right-column,
+.header {
+  background-color: aliceblue;
+}
+
+p {
+  margin: 1em;
+}
+/*.header {
+    background-color: aliceblue;
+}*/
