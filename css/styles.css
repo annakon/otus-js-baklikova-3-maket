@@ -14,7 +14,6 @@
 }
 
 .content {
-  background-color: aliceblue;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 20px;
@@ -28,8 +27,13 @@
   background-color: aliceblue;
 }
 
-p {
+p.simple,
+article {
   margin: 1em;
+}
+
+article p {
+  margin-top: 1em;
 }
 /*.header {
     background-color: aliceblue;
