@@ -27,14 +27,41 @@
   background-color: aliceblue;
 }
 
-p.simple,
-article {
+p.simple {
   margin: 1em;
+}
+
+article {
+  margin: 1em 1em 2em 1em;
 }
 
 article p {
   margin-top: 1em;
 }
-/*.header {
-    background-color: aliceblue;
-}*/
+
+img {
+  height: 120px;
+  width: 35%;
+  object-fit: cover;
+  margin: 1em;
+}
+
+header img {
+  float: left;
+}
+
+header p.simple {
+  margin-right: 5em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+footer {
+  display: flex;
+}
+
+footer p {
+  width: 20%;
+}
