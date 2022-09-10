@@ -10,13 +10,13 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   min-height: 100vh;
-  gap: 20px;
+  gap: 10px;
 }
 
 .content {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  gap: 20px;
+  gap: 10px;
 }
 
 .footer,
@@ -32,7 +32,7 @@ p.simple {
 }
 
 article {
-  margin: 1em 1em 2em 1em;
+  margin: 1em;
 }
 
 article p {
@@ -52,10 +52,11 @@ header img {
 
 header p.simple {
   margin-right: 5em;
+  font-size: 1.3em;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 footer {
@@ -64,4 +65,5 @@ footer {
 
 footer p {
   width: 20%;
+  margin: 1em;
 }
