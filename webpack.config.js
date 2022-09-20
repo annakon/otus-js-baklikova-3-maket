@@ -14,7 +14,7 @@ module.exports = {
     environment: {
       arrowFunction: false,
     },
-    // assetModuleFilename: 'images/[name][ext]'
+    assetModuleFilename: "images/[name][ext]",
   },
   devtool: mode === "development" ? "eval-source-map" : "source-map",
   module: {
