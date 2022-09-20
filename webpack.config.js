@@ -1,5 +1,5 @@
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { resolve } = require("node:path");
 
@@ -14,7 +14,7 @@ module.exports = {
     environment: {
       arrowFunction: false,
     },
-    assetModuleFilename: "images/[name][ext]",
+    // assetModuleFilename: "images/[name][ext]",
   },
   devtool: mode === "development" ? "eval-source-map" : "source-map",
   module: {
@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(jpg|jpeg)$/i,
@@ -47,11 +47,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "index.html",
     }),
-    new MiniCssExtractPlugin(),
+    // new MiniCssExtractPlugin(),
   ],
-  optimization: {
+  /* optimization: {
     minimizer: [`...`, new CssMinimizerPlugin()],
-  },
+  }, */
   devServer: {
     compress: true,
     port: 9000,
